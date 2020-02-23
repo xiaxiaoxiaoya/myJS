@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>数组方法</title>
 </head>
+
 <body>
-    <!-- 数组方法开始 -->
+
+
 </body>
+
 </html>
+<script type='text/javascript'>
+    /*  
+    一、JS创建数组有两种方式
+         1、使用Array构造函数
+         2、使用数组字面量表示法 
+    */
+
+    //1、使用Array构造函数
+    var arr1 = new Array();//创建一个空数组
+    //    console.log(arr1)
+    var arr2 = new Array(20);//创建一个包含20项的空数组
+    //    console.log(arr2)
+    var arr3 = new Array('xiaxia', 'haha', 'xixi');//创建一个包含三个字符串的数组
+    //    console.log(arr3)
+
+    //2、使用数组字面量表示法
+    var arr4 = [];//创建一个空数组
+    var arr5 = [20];//创建一个包含1项的数组
+    var arr6 = ['xiaxia', 'haha', 'xixi']//创建一个包含三个字符串的数组
+
+
+    /*
+    二、数组方法：数组方法有数组原型方法，也有从object对象继承来的方法，这里我们只介绍数组的原型方法，数组原型方法主要有以下这些：
+    join()
+    push()/pop()
+    shift()/unshift()
+    sort()
+    reverse()
+    conact()
+    slice()
+    indexOf()/lastIndexOf() (ES5新增加)
+    forEach() (ES5新增加)
+    map() (ES5新增加)
+    filter()  (ES5新增加)
+    every((ES5新增加)
+    some()(ES5新增加)
+    reduce()/reduceRight  (ES5新增加)
+     */
+
+    /*
+    1、join()方法：
+        作用：join(separator):separator分隔器，将数组的元素按照指定的分隔器连接符连接成一个字符串。和字符串的split()方法是逆运算。
+        参数：可有可无，如果没有就是默认指定逗号作为连接符；如果指定空串，那么元素之前不会有任何字符连接。
+        返回值：返回连接好的字符串
+        不会影响原数组
+     */
+     var arr = [2,3,4,5];
+     var result = arr.join();//1,2,3,4
+     var result = arr.join('');//1234
+     var result = arr.join('&');//1&2&3&4
+    //  console.log(result);
+    
+    //通过join()方法可以实现重复字符串
+    function repeatString(str,n){
+       var result1 = new Array(n+1).join(str)
+       return result1;
+    }
+    // console.log(repeatString('xia',3))//相当于以xia为连接符
+    
+
+    /* 
+    2、push()和pop()
+    push()：
+    功能：在
+
+     */
+
+
+
+
+</script>
